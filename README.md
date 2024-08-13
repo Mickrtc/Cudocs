@@ -34,3 +34,16 @@ This will only generate the MDX files for each endpoint. You need to add a link 
 Please just create a PR and we will review it within a few days.
 
 Or talk to us on our [discord](https://discord.com/invite/comfyorg) :)
+
+## Custom Nodes Documentation
+
+The following files provide detailed documentation for custom nodes:
+
+- [Code Interface](essentials/custom_node_interface.mdx)
+- [Lifecycle](essentials/custom_node_lifecycle.mdx)
+- [Hidden and Flexible Inputs](essentials/custom_node_more_on_inputs.mdx)
+- [Overview](essentials/custom_node_overview.mdx)
+- [Server Overview](essentials/custom_node_server_overview.mdx)
+- [Annotated Examples](essentials/custom_node_snippets.mdx)
+- [Working with torch.Tensor](essentials/custom_node_tensors.mdx)
+- [Step-by-Step Walkthrough](essentials/custom_node_walkthrough.mdx)

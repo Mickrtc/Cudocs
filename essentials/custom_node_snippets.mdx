@@ -86,3 +86,16 @@ class Noise_MixedNoise:
         noise2 = self.noise2.generate_noise(input_latent)
         return noise1 * (1.0-self.weight2) + noise2 * (self.weight2)
 ```
+
+## Custom Nodes Documentation
+
+The following files provide detailed documentation for custom nodes:
+
+- [Code Interface](essentials/custom_node_interface.mdx)
+- [Lifecycle](essentials/custom_node_lifecycle.mdx)
+- [Hidden and Flexible Inputs](essentials/custom_node_more_on_inputs.mdx)
+- [Overview](essentials/custom_node_overview.mdx)
+- [Server Overview](essentials/custom_node_server_overview.mdx)
+- [Annotated Examples](essentials/custom_node_snippets.mdx)
+- [Working with torch.Tensor](essentials/custom_node_tensors.mdx)
+- [Step-by-Step Walkthrough](essentials/custom_node_walkthrough.mdx)
