@@ -127,3 +127,40 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "CheckpointLoaderSimple": "Load Checkpoint",
 }
 ```
+
+## Sample Code for Custom Nodes
+
+Here is an example of a simple custom node that takes an image and inverts its colors:
+
+```python
+import torch
+
+class InvertImageNode:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": { "image_in" : ("IMAGE", {}) },
+        }
+
+    RETURN_TYPES = ("IMAGE",)
+    RETURN_NAMES = ("image_out",)
+    CATEGORY = "examples"
+    FUNCTION = "invert"
+
+    def invert(self, image_in):
+        image_out = 1 - image_in
+        return (image_out,)
+```
+
+## Custom Nodes Documentation
+
+The following files provide detailed documentation for custom nodes:
+
+- [Code Interface](essentials/custom_node_interface.mdx)
+- [Lifecycle](essentials/custom_node_lifecycle.mdx)
+- [Hidden and Flexible Inputs](essentials/custom_node_more_on_inputs.mdx)
+- [Overview](essentials/custom_node_overview.mdx)
+- [Server Overview](essentials/custom_node_server_overview.mdx)
+- [Annotated Examples](essentials/custom_node_snippets.mdx)
+- [Working with torch.Tensor](essentials/custom_node_tensors.mdx)
+- [Step-by-Step Walkthrough](essentials/custom_node_walkthrough.mdx)
